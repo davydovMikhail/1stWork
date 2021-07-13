@@ -8,12 +8,12 @@
     <title>Homepage</title>
 </head>
 <body>
-    <div class="appTitle">
-        <div class="appTitle__body">
+    <div class="top">
+        <div class="top__body">
             <header>
-                <div class="appTitle__header">
-                    <div class="appTitle__title title">AppSon</div>
-                    <div class="appTitle__navsignup">
+                <div class="top__header">
+                    <div class="top__title title">AppSon</div>
+                    <div class="top__navsignup">
     
                         <div class="burger-menu">
                             <input id="menu-toggle" type="checkbox" />
@@ -25,7 +25,7 @@
                                 <li><a href="">FEATURES</a></li>
                                 <li><a href="">PRICING</a></li>
                                 <li><a href="">PAGES</a></li>
-                                <button class="appTitle__signup signup">SIGN UP</button>
+                                <button class="top__signup signup">SIGN UP</button>
                             </ul>
                         </div>
     
@@ -41,7 +41,7 @@
                               <li><a href="">FEATURES</a></li>
                               <li><a href="">PRICING</a></li>
                               <li><a href="">PAGES</a></li>
-                              <button class="appTitle__signup signup">SIGN UP</button>
+                              <button class="top__signup signup">SIGN UP</button>
                         </ul>
                             
                 
@@ -51,12 +51,12 @@
             </header>
             
 
-            <div class="appTitle__desktop">
-                <div class="appTitle__desktop_title">Best Desktop App for You</div>
-                <div class="appTitle__desktop_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                <div class="appTitle__buttons">
-                    <button class="appTitle__buttons_down">Download</button>
-                    <button class="appTitle__buttons_free">Free Trial</button>
+            <div class="top__desktop">
+                <div class="top__desktop_title">Best Desktop App for You</div>
+                <div class="top__desktop_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="top__buttons">
+                    <button class="top__buttons_down">Download</button>
+                    <button class="top__buttons_free">Free Trial</button>
                 </div>
             </div>
         </div>
@@ -163,21 +163,19 @@
                     <button class="price__button">Try Now</button>
                 </div>
                 <div class="price__item">
-                    <div class="price__item">
-                        <div class="price__circle">
-                            <div class="price__circle_in"><img src="img/plane.png" alt="rocket"></div>
-                        </div>
-                        <div class="price__item_text">Standart</div>
-                        <div class="price__item_line"></div>
-                        <div class="price__item_main">2gb Hosting<br>
-                            10 Custom Domain<br>
-                            SSD Hosting<br>
-                            50 gb Bandwith<br>
-                            Free Support
-                        </div>
-                        <div class="price__item_appraiser"><p class="dollar">$</p><p class="price__value">19.00</p></div>
-                        <button class="price__button_next">Try Now</button>
+                    <div class="price__circle">
+                        <div class="price__circle_in"><img src="img/plane.png" alt="rocket"></div>
                     </div>
+                    <div class="price__item_text">Standart</div>
+                    <div class="price__item_line"></div>
+                    <div class="price__item_main">2gb Hosting<br>
+                        10 Custom Domain<br>
+                        SSD Hosting<br>
+                        50 gb Bandwith<br>
+                        Free Support
+                    </div>
+                    <div class="price__item_appraiser"><p class="dollar">$</p><p class="price__value">19.00</p></div>
+                    <button class="price__button_next">Try Now</button>
                 </div>
             </div>
         </div>
@@ -329,12 +327,13 @@
                     </div>
                 </div>
             </div>
+            <button id="upbutton" class="up">
+                <img src="img/arrowUp.png" alt="up" onclick="smoothJumpUp(); return false;">
+            </button>
         </div>
     </footer>
     
-    <button id="upbutton" class="up">
-        <img src="img/arrowUp.png" alt="up" onclick="smoothJumpUp(); return false;">
-    </button>
+    
 
     <script src="main.js"></script>
     <scrip src="https://kit.fontawesome.com/1c0cad2df4.js" crossorigin="anonymous"></scrip>

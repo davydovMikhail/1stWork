@@ -37,7 +37,7 @@ textarea {
 button:hover {
   cursor: pointer;
 }
-.appTitle {
+.top {
   background: linear-gradient(206.38deg, #0f7bff 8.31%, #0063dd 61.03%);
   width: 100%;
   height: 1029px;
@@ -46,27 +46,29 @@ button:hover {
   background-position: center top;
   background-size: cover;
 }
-.appTitle__body {
-  width: 1648px;
+.top__body {
+  width: 95%;
+  max-width: 1648px;
+  min-width: 300px;
   height: 1029px;
   margin: 0px auto;
   background-image: url("img/Devices.png");
   background-repeat: no-repeat;
   background-position: center 495px;
 }
-.appTitle__header,
-.appTitle__navsignup,
-.appTitle__nav {
+.top__header,
+.top__navsignup,
+.top__nav {
   display: flex;
   justify-content: space-between;
 }
-.appTitle__header .appTitle__navsignup {
+.top__header .top__navsignup {
   align-items: center;
 }
 .menu {
   width: 572px;
 }
-.appTitle__nav {
+.top__nav {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -74,7 +76,7 @@ button:hover {
   width: 355px;
   margin-right: 52px;
 }
-.appTitle__title {
+.top__title {
   width: 179px;
   height: 100px;
   background: #0f7bff;
@@ -89,7 +91,7 @@ button:hover {
   text-align: center;
   padding-top: 25px;
 }
-.appTitle__signup {
+.top__signup {
   width: 165px;
   height: 50px;
   background: #0063dd;
@@ -103,26 +105,33 @@ button:hover {
   color: #ffffff;
 }
 .signup:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  border: 2px solid #0f7bff;
+  color: #0f7bff;
+  background: white;
 }
-.appTitle__desktop {
+.top__desktop {
   margin: 0px auto;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 655px;
+  max-width: 655px;
+  min-width: 300px;
 }
-.appTitle__desktop_title {
+.top__desktop_title {
+  text-align: center;
+  width: 90%;
+  min-width: 300px;
+  max-width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
   color: #000000;
 }
-.appTitle__desktop_text {
+.top__desktop_text {
+  width: 100%;
+  min-width: 300px;
   padding-top: 30px;
   font-style: normal;
   font-weight: normal;
@@ -131,13 +140,13 @@ button:hover {
   text-align: center;
   color: #929292;
 }
-.appTitle__buttons {
+.top__buttons {
   width: 362px;
   display: flex;
   justify-content: space-between;
   margin-top: 33px;
 }
-.appTitle__buttons_down {
+.top__buttons_down {
   width: 166px;
   height: 50px;
   background: #0f7bff;
@@ -148,12 +157,12 @@ button:hover {
   line-height: 20px;
   color: #ffffff;
 }
-.appTitle__buttons_down:hover {
+.top__buttons_down:hover {
   border: 2px solid #0f7bff;
   color: #0f7bff;
   background: white;
 }
-.appTitle__buttons_free {
+.top__buttons_free {
   width: 166px;
   height: 50px;
   border: 2px solid #0f7bff;
@@ -164,7 +173,7 @@ button:hover {
   line-height: 20px;
   color: #0f7bff;
 }
-.appTitle__buttons_free:hover {
+.top__buttons_free:hover {
   border: none;
   color: white;
   background: #0f7bff;
@@ -175,7 +184,6 @@ button:hover {
 .downbutton__body {
   width: 114px;
   height: 114px;
-  background: rgba(0, 99, 221, 0.23);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -188,7 +196,7 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 .downbutton__body:hover {
-  background: rgba(0, 99, 221, 0.5);
+  background: rgba(0, 99, 221, 0.23);
 }
 .downbutton__in {
   width: 70px;
@@ -200,20 +208,29 @@ button:hover {
   justify-content: center;
 }
 .advantages {
-  height: 635px;
+  min-height: 635px;
+  max-height: 1000px;
   width: 100%;
   background: #f5fcfd;
   display: flex;
   justify-content: center;
 }
 .advantages__body {
-  width: 1146px;
+  flex: auto;
+  width: 90%;
+  max-width: 1146px;
+  min-width: 320px;
   display: flex;
   margin: 165px auto 0 auto;
   justify-content: space-between;
 }
 .advantages__item {
-  width: 362px;
+  margin-right: 5px;
+  margin-left: 5px;
+  flex: auto;
+  width: 90%;
+  max-width: 362px;
+  min-width: 100px;
   height: 290px;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
@@ -260,12 +277,17 @@ button:hover {
   text-align: center;
 }
 .reclame {
+  flex: auto;
   width: 100%;
-  height: 1190px;
+  max-height: 1190px;
+  min-height: 600px;
 }
 .reclame__body {
-  width: 1146px;
-  height: 1190px;
+  flex: auto;
+  max-width: 1146px;
+  min-width: 300px;
+  max-height: 1190px;
+  min-height: 500px;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
@@ -275,7 +297,8 @@ button:hover {
   align-items: center;
   margin: 0 auto;
   width: 1146px;
-  height: 557px;
+  max-height: 557px;
+  min-height: 330px;
   display: flex;
   justify-content: space-between;
 }
@@ -283,7 +306,9 @@ button:hover {
   position: relative;
 }
 .reclame__text {
-  width: 476px;
+  width: 95%;
+  max-width: 476px;
+  min-width: 280px;
 }
 .reclame__figure_block {
   width: 389.71px;
@@ -329,6 +354,8 @@ button:hover {
   align-items: center;
   margin: 0 auto;
   width: 1146px;
+  max-height: 557px;
+  min-height: 330px;
   display: flex;
   justify-content: space-between;
 }
@@ -345,16 +372,18 @@ button:hover {
   left: -65px;
 }
 .reclame__next {
-  width: 543px;
-  margin-top: 70px;
+  max-width: 543px;
+  min-width: 300px;
 }
 .how {
   width: 100%;
-  height: 635px;
+  min-height: 635px;
+  max-height: 1000px;
   background: #f5fcfd;
 }
 .how__body {
   margin: 0px auto;
+  min-width: 320px;
 }
 .how__body_title {
   font-style: normal;
@@ -375,13 +404,17 @@ button:hover {
   padding-top: 25px;
 }
 .how__order {
-  width: 1170px;
+  max-width: 1170px;
+  min-width: 300px;
   margin: 45px auto 0px;
   display: flex;
   justify-content: space-around;
   position: relative;
 }
 .how__item {
+  margin-left: 5px;
+  margin-right: 5px;
+  min-width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -421,17 +454,24 @@ button:hover {
   margin-top: 50px;
 }
 .price {
+  padding: 10px;
   width: 100%;
-  height: 835px;
+  max-height: 1300px;
+  min-height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .price__body {
+  flex: auto;
   display: flex;
-  width: 1146px;
+  max-width: 1146px;
+  min-width: 320px;
   justify-content: space-between;
   align-items: center;
+}
+.price__time {
+  margin: 10px;
 }
 .price__title {
   font-style: normal;
@@ -441,7 +481,9 @@ button:hover {
   color: #000000;
 }
 .price__text {
-  width: 332px;
+  flex: auto;
+  max-width: 332px;
+  min-width: 270px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -451,13 +493,18 @@ button:hover {
   margin-bottom: 40px;
 }
 .price__options {
+  flex: auto;
   display: flex;
-
-  width: 754px;
+  width: 100%;
+  max-width: 754px;
+  min-width: 300px;
   justify-content: space-between;
 }
 .price__item {
-  width: 362px;
+  flex: auto;
+  margin: 5px;
+  max-width: 362px;
+  min-width: 145px;
   height: 576px;
   box-shadow: 0px 4px 20px rgba(0, 36, 80, 0.08);
   border-radius: 5px;
@@ -493,7 +540,9 @@ button:hover {
   margin-top: 20px;
 }
 .price__item_line {
-  width: 303px;
+  width: 100%;
+  max-width: 303px;
+  min-width: 90px;
   height: 0px;
   border-top: 2px solid #e9f3f8;
   margin-top: 25px;
@@ -596,7 +645,6 @@ button:hover {
 }
 .trust {
   width: 100%;
-  height: 601px;
   background: #f5fcfd;
 }
 .trust__title {
@@ -620,13 +668,18 @@ button:hover {
 }
 .trust__main {
   margin-left: 20px;
+  margin-left: 10px;
   overflow: hidden;
   height: 601px;
-  width: 1146px;
+  width: 95%;
+  max-width: 1146px;
+  min-width: 320px;
 }
 .news {
+  flex: auto;
   width: 100%;
-  height: 965px;
+  max-height: 1250px;
+  min-height: 965px;
   display: flex;
   flex-direction: column;
 }
@@ -650,14 +703,16 @@ button:hover {
   margin-bottom: 41px;
 }
 .news__body {
-  width: 1160px;
+  flex: auto;
+  max-width: 1160px;
+  min-width: 320px;
   margin: 0 auto;
   display: flex;
-
   justify-content: space-between;
 }
 .news__main {
-  width: 568px;
+  max-width: 568px;
+  min-width: 290px;
 }
 .news__item {
   display: flex;
@@ -681,7 +736,8 @@ button:hover {
   font-size: 16px;
   line-height: 150%;
   color: #000000;
-  width: 543px;
+  max-width: 543px;
+  min-width: 290px;
   margin-top: 25px;
 }
 .news__main_link {
@@ -711,14 +767,18 @@ button:hover {
 }
 .try {
   width: 100%;
-  height: 335px;
+  height: 100%;
+  max-height: 335px;
+  min-height: 270px;
   background: #f5fcfd;
   display: flex;
   justify-content: center;
 }
 .try__body {
   height: 89px;
-  width: 754px;
+  width: 90%;
+  max-width: 754px;
+  min-width: 320px;
   margin-top: 133px;
   display: flex;
   justify-content: space-between;
@@ -759,9 +819,9 @@ button:hover {
   color: #ffffff;
 }
 .try__button:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  border: 2px solid #0f7bff;
+  color: #0f7bff;
+  background: white;
 }
 .try__button_arrow {
   padding-left: 13px;
@@ -819,7 +879,23 @@ button:hover {
   line-height: 150%;
   color: #ffffff;
 }
+.susubscribe__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.susubscribe__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.susubscribe__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+.susubscribe__input::placeholder {
+  color: #ffffff;
+}
+.susubscribe__input::-moz-placeholder {
+  color: #ffffff;
+}
 .footer {
+  position: relative;
   width: 100%;
   height: 125px;
   background: #0063dd;
@@ -828,7 +904,11 @@ button:hover {
   justify-content: center;
 }
 .footer__body {
-  width: 1146px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 100%;
+  max-width: 1146px;
+  min-width: 300px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -838,13 +918,18 @@ button:hover {
   justify-content: space-between;
 }
 .footer__other {
-  width: 539px;
+  margin-left: 5px;
+  width: 100%;
+  max-width: 539px;
+  min-width: 200px;
   display: flex;
   justify-content: space-between;
 }
 .footer__nav {
   display: flex;
-  width: 345px;
+  width: 100%;
+  max-width: 345px;
+  min-width: 100px;
   justify-content: space-between;
 }
 .footer__repost {
@@ -854,7 +939,7 @@ button:hover {
 }
 .up {
   box-shadow: 2px solid #0063dd;
-  position: fixed;
+  position: absolute;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -933,18 +1018,15 @@ ul a {
   }
 }
 li > a:hover {
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
+  text-shadow: 1px 1px 2px black, 0 0 1em #0063dd;
 }
 div > a:hover {
-  text-shadow: 1px 1px 2px black, 0 0 1em red;
+  text-shadow: 1px 1px 2px black, 0 0 1em #0063dd;
 }
 /* АДАПТИВ */
 @media (max-width: 1648px) {
-  .appTitle__body {
-    width: 1400px;
-  }
   .up {
-    bottom: 100px;
+    bottom: 120px;
     right: 85px;
   }
   .trust__picture {
@@ -952,85 +1034,49 @@ div > a:hover {
   }
 }
 @media (max-width: 1401px) {
-  .appTitle__body {
-    width: 1201px;
-  }
   .reclame__figure {
     display: none;
   }
-  .reclame {
-    height: 800px;
+  .reclame__girl {
+    width: 90%;
+    max-width: 1146px;
+    min-width: 300px;
   }
-}
-@media (max-width: 1200px) {
-  .appTitle__body {
-    width: 1020px;
+  .reclame__boy {
+    width: 90%;
+    max-width: 1146px;
+    min-width: 300px;
   }
 }
 @media (max-width: 1100px) {
-  .trust__main {
-    width: 1000px;
-  }
   .card__main {
     bottom: 20px;
   }
-
-  .appTitle__header {
-    width: 980px;
-  }
-  .appTitle__body {
-    width: 980px;
+  .top__header {
+    max-width: 980px;
+    min-width: 300px;
   }
   .advantages__body {
-    width: 960px;
+    flex-direction: column;
     margin: 75px auto 0 auto;
   }
+  .advantages__item:nth-child(2) {
+    margin-top: 0px;
+  }
   .advantages__item {
-    width: 300px;
+    margin: 5px auto;
   }
   .advantages__item_mainText {
     width: 270px;
   }
-  .reclame {
-    height: 900px;
-  }
-  .reclame__body {
-    width: 992px;
-  }
-  .reclame__girl {
-    width: 960px;
-  }
-  .reclame__boy {
-    width: 960px;
-  }
-  .reclame__text {
-    width: 400px;
-    margin-left: 200px;
-  }
-  .reclame__next {
-    width: 470px;
-    margin-right: 250px;
-  }
-  .how__body {
-    width: 992px;
-  }
-  .how__order {
-    width: 960px;
-  }
-  .how__item {
-    width: 265px;
-  }
   .leader {
-    width: 700px;
+    display: none;
   }
   .price__body {
-    width: 960px;
+    flex-direction: column;
   }
-  .price__item {
-    width: 300px;
-  }
-  .price__text {
-    width: 270px;
+  .price__options {
+    margin-top: 20px;
   }
   .price__period {
     display: flex;
@@ -1043,57 +1089,22 @@ div > a:hover {
   .price__period_yearly {
     width: 135px;
   }
-  .price__item_line {
-    width: 215px;
-  }
-  .price__options {
-    width: 630px;
-  }
-  .news__body {
-    width: 992px;
+  .news__picture {
+    display: none;
   }
   .news__main {
-    width: 400px;
     margin-left: 15px;
-  }
-  .other {
-    margin-left: 10px;
-  }
-  .main {
-    margin-left: 10px;
-  }
-  .footer__body {
-    width: 960px;
-  }
-  .footer__other {
-    width: 490px;
   }
 }
 @media (max-width: 830px) {
-  .appTitle__header {
-    width: 700px;
-  }
-  .appTitle__body {
+  .top__body {
     background-image: url("img/Phone\(width-screen\ 768px\).png");
-    width: 720px;
   }
   .nav {
     width: 130px;
   }
-  .advantages {
-    height: 800px;
-  }
-  .advantages__body {
-    flex-direction: column;
-    width: 720px;
-    margin-bottom: 56px;
-  }
   .advantages__item {
-    width: 720px;
     height: 210px;
-  }
-  .advantages__item:nth-child(2) {
-    margin-top: 0px;
   }
   .advantages__item_pic {
     margin-top: 10px;
@@ -1103,21 +1114,6 @@ div > a:hover {
   }
   .advantages__item_mainText {
     margin-top: 10px;
-  }
-  .reclame {
-    height: 600px;
-  }
-  .reclame__body {
-    width: 740px;
-    height: 700px;
-  }
-  .reclame__girl {
-    width: 720px;
-  }
-  .reclame__boy {
-    width: 720px;
-    height: 1000px;
-    margin-top: 0px;
   }
   .reclame__figure_girl {
     display: none;
@@ -1131,32 +1127,6 @@ div > a:hover {
   .arrow {
     margin-left: 50px;
   }
-  .reclame__next {
-    margin-right: 0;
-    z-index: 10;
-    height: 430px;
-  }
-  .how__body {
-    width: 768px;
-  }
-  .how__order {
-    width: 740px;
-  }
-  .how__item {
-    width: 210px;
-  }
-  .leader {
-    width: 580px;
-  }
-  .price__body {
-    width: 740px;
-  }
-  .price__item {
-    width: 220px;
-  }
-  .price__text {
-    width: 270px;
-  }
   .price__period {
     margin-left: 0px;
   }
@@ -1166,96 +1136,34 @@ div > a:hover {
   .price__period_yearly {
     width: 100px;
   }
-  .price__item_line {
-    width: 160px;
-  }
-  .price__options {
-    width: 630px;
-  }
   .price__button {
     width: 100px;
   }
   .price__button_next {
     width: 100px;
   }
-  .news {
-    height: 800px;
-  }
-  .news__picture {
-    display: none;
-  }
   .news__body {
-    width: 768px;
+    flex-direction: column;
   }
   .news__main {
-    width: 400px;
     margin-left: 15px;
-    height: 390px;
-  }
-  .news__main_text {
-    width: 400px;
-    margin-top: 25px;
-  }
-  .other {
-    margin-top: 5px;
-  }
-  .try__body {
-    width: 700px;
-  }
-  .footer__body {
-    width: 740px;
-  }
-  .footer__other {
-    width: 490px;
   }
   .footer__right {
     width: 200px;
   }
   .footer__nav {
-    width: 150px;
     flex-direction: column;
-  }
-  .footer__repost {
-    margin-right: 25px;
   }
 }
 @media (max-width: 580px) {
-  .appTitle__header {
-    width: 460px;
-  }
-  .appTitle__body {
-    width: 460px;
-  }
-  .appTitle__desktop {
-    width: 480px;
-  }
-  .appTitle__desktop_text {
-    width: 460px;
-  }
-  .appTitle__signup {
+  .top__signup {
     width: 140px;
   }
-  .appTitle__title {
+  .top__title {
     width: 120px;
   }
   .title {
     font-size: 24px;
-  }
-  .advantages__item {
-    width: 460px;
-    margin: 0 auto;
-  }
-  .reclame {
-    height: 700px;
-  }
-  .reclame__body {
-    width: 460px;
-    height: 600px;
-  }
-  .reclame__next {
-    width: 380px;
-    margin-left: 20px;
-    height: 200px;
   }
   .reclame__figure_block {
     display: none;
@@ -1268,38 +1176,11 @@ div > a:hover {
     background: linear-gradient(147.4deg, #0f7bff 7.27%, #0063dd 93.68%);
     padding: 7px;
   }
-  .reclame__girl {
-    width: 460px;
-    height: 330px;
-  }
-  .reclame__boy {
-    width: 460px;
-    margin-top: 0;
-  }
-  .reclame__text {
-    margin-top: 100px;
-    margin-left: 0;
-    width: 380px;
-    height: 300px;
-  }
-  .how {
-    height: 600px;
-  }
-  .how__body {
-    margin: 0px auto;
-    width: 480px;
-  }
   .how__body_title {
     padding-top: 50px;
   }
   .how__body_text {
     padding-top: 25px;
-  }
-  .how__order {
-    width: 460px;
-  }
-  .how__item {
-    width: 120px;
   }
   .how__item_circle {
     width: 100px;
@@ -1315,36 +1196,9 @@ div > a:hover {
     width: 95px;
   }
   .how__item_main {
+    margin-right: 15px;
+    margin-left: 15px;
     margin-top: 20px;
-  }
-  .leader {
-    display: none;
-  }
-
-  .price {
-    height: 1000px;
-  }
-  .price__body {
-    display: flex;
-    flex-direction: column;
-    width: 1146px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .price__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 40px;
-    color: #000000;
-  }
-  .price__options {
-    width: 450px;
-    margin-top: 20px;
-  }
-  .price__item {
-    width: 215px;
-    height: 576px;
   }
   .price__period_monthly {
     width: 169px;
@@ -1352,40 +1206,14 @@ div > a:hover {
   .price__period_yearly {
     width: 169px;
   }
-
-  .news {
-    height: 1000px;
-  }
   .news__title {
     margin-top: 65px;
-  }
-  .news__body {
-    width: 480px;
-    flex-direction: column;
-  }
-  .news__main {
-    width: 450px;
   }
   .news__main_title {
     margin-top: 25px;
   }
-  .news__main_text {
-    width: 450px;
-    margin-top: 25px;
-
-    margin-left: 0px;
-  }
-  .other {
-    margin-top: 5px;
-    margin-left: 0px;
-  }
-
-  .try {
-    height: 270px;
-  }
   .try__body {
     height: 150px;
-    width: 480px;
     margin-top: 60px;
     flex-direction: column;
   }
@@ -1395,8 +1223,6 @@ div > a:hover {
     justify-content: space-between;
   }
   .subscribe {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
   .subscribe__title {
@@ -1418,120 +1244,44 @@ div > a:hover {
     flex-direction: column;
     height: 150px;
   }
-
   .footer {
     height: 225px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer__body {
-    width: 460px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__other {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__nav {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    justify-content: space-between;
-  }
-  .footer__repost {
-    display: flex;
-    width: 110px;
-    justify-content: space-between;
   }
   .up {
-    bottom: 15px;
+    bottom: 30px;
     right: 30px;
   }
 }
 
 @media (max-width: 420px) {
-  .appTitle {
+  .top {
     height: 950px;
   }
-  .appTitle__header {
-    width: 300px;
-  }
-  .appTitle__body {
+  .top__body {
     background-image: none;
-    width: 300px;
     height: 950px;
   }
-  .appTitle__desktop {
-    width: 320px;
-  }
-  .appTitle__desktop_text {
-    width: 300px;
-    text-align: left;
-  }
-  .appTitle__signup {
+  .top__signup {
     width: 100px;
   }
-  .appTitle__title {
+  .top__title {
     width: 90px;
-  }
-  .appTitle__desktop_title {
-    width: 300px;
   }
   .title {
     font-size: 20px;
   }
-  .appTitle__buttons {
+  .top__buttons {
     width: 290px;
   }
-  .appTitle__buttons_down {
+  .top__buttons_down {
     border-radius: 25px 0 0 25px;
   }
-  .appTitle__buttons_free {
+  .top__buttons_free {
     border-radius: 0 25px 25px 0;
   }
   .downbutton__body {
     top: -300px;
     background-color: white;
-  }
-  .advantages__item {
-    width: 300px;
-    margin: 0 auto;
-  }
-  .reclame {
-    height: 800px;
-  }
-  .reclame__body {
-    width: 300px;
-    height: 400px;
-  }
-  .reclame__next {
-    width: 300px;
-    margin-left: 0px;
-    height: 200px;
-  }
-  .reclame__girl {
-    width: 300px;
-    height: 330px;
-  }
-  .reclame__boy {
-    width: 300px;
-    margin-top: 0;
-  }
-  .reclame__text {
-    margin-top: 20px;
-    width: 300px;
-    height: 300px;
-  }
-
-  .how {
-    height: 1000px;
-  }
-  .how__body {
-    margin: 0px auto;
-    width: 320px;
   }
   .how__body_title {
     padding-top: 30px;
@@ -1540,11 +1290,9 @@ div > a:hover {
     padding-top: 25px;
   }
   .how__order {
-    width: 300px;
     flex-direction: column;
   }
   .how__item {
-    width: 200px;
     margin: 0px auto;
     margin-bottom: 10px;
   }
@@ -1565,22 +1313,10 @@ div > a:hover {
     background: linear-gradient(147.4deg, #0f7bff 7.27%, #0063dd 93.68%);
     border-radius: 5px;
   }
-  .price {
-    height: 800px;
-  }
   .price__circle {
     display: none;
   }
-  .price__body {
-    width: 320px;
-  }
-
-  .price__options {
-    width: 300px;
-    margin-top: 20px;
-  }
   .price__item {
-    width: 145px;
     height: 350px;
   }
   .price__item_main {
@@ -1592,33 +1328,14 @@ div > a:hover {
   .price__period_yearly {
     width: 130px;
   }
-  .price__item_line {
-    width: 90px;
-  }
-
-  .news {
-    height: 1250px;
-  }
   .news__title {
     margin-top: 50px;
   }
-  .news__body {
-    width: 320px;
-  }
   .news__main {
-    width: 290px;
     margin-top: 15px;
-  }
-  .news__main_text {
-    width: 290px;
-  }
-
-  .try {
-    height: 300px;
   }
   .try__body {
     height: 190px;
-    width: 320px;
   }
   .try__text {
     margin-left: 25px;
@@ -1636,25 +1353,13 @@ div > a:hover {
   }
   .footer {
     height: 270px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .footer__right {
     font-size: 12px;
   }
-  .footer__body {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__other {
-    width: 300px;
-  }
   .up {
     width: 60px;
     height: 60px;
-    bottom: 15px;
     right: 15px;
   }
 }
