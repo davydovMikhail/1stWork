@@ -162,22 +162,6 @@ button:hover {
   color: #0f7bff;
   background: white;
 }
-.top__buttons_free {
-  width: 166px;
-  height: 50px;
-  border: 2px solid #0f7bff;
-  border-radius: 25px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #0f7bff;
-}
-.top__buttons_free:hover {
-  border: none;
-  color: white;
-  background: #0f7bff;
-}
 .downbutton {
   position: relative;
 }
@@ -588,26 +572,6 @@ button:hover {
   color: #0f7bff;
   background: white;
 }
-.price__button_next {
-  width: 166px;
-  height: 50px;
-  border-radius: 25px;
-  margin-top: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #0f7bff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  color: #0f7bff;
-}
-.price__button_next:hover {
-  border: none;
-  color: white;
-  background: #0f7bff;
-}
 .price__value {
   font-size: 36px;
 }
@@ -673,7 +637,7 @@ button:hover {
   height: 601px;
   width: 95%;
   max-width: 1146px;
-  min-width: 320px;
+  min-width: 300px;
 }
 .news {
   flex: auto;
@@ -879,33 +843,31 @@ button:hover {
   line-height: 150%;
   color: #ffffff;
 }
-.susubscribe__input::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #ffffff;
 }
-.susubscribe__input:-ms-input-placeholder {
+:-moz-placeholder {
   color: #ffffff;
 }
-.susubscribe__input::-ms-input-placeholder {
+::-moz-placeholder {
   color: #ffffff;
 }
-.susubscribe__input::placeholder {
-  color: #ffffff;
-}
-.susubscribe__input::-moz-placeholder {
+:-ms-input-placeholder {
   color: #ffffff;
 }
 .footer {
   position: relative;
   width: 100%;
-  height: 125px;
+  min-height: 125px;
+  max-height: 270px;
   background: #0063dd;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .footer__body {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 100%;
   max-width: 1146px;
   min-width: 300px;
@@ -915,7 +877,14 @@ button:hover {
   line-height: 150%;
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+}
+.footer__right {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 .footer__other {
   margin-left: 5px;
@@ -928,6 +897,7 @@ button:hover {
 .footer__nav {
   display: flex;
   width: 100%;
+  margin-bottom: 10px;
   max-width: 345px;
   min-width: 100px;
   justify-content: space-between;
@@ -939,14 +909,12 @@ button:hover {
 }
 .up {
   box-shadow: 2px solid #0063dd;
-  position: absolute;
   width: 70px;
   height: 70px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   border-radius: 50%;
-  right: 158px;
-  bottom: 27px;
   outline: none;
-  z-index: 20;
 }
 .up:hover {
   box-shadow: inset 0 0 0 7px #0063dd;
@@ -1017,18 +985,17 @@ ul a {
     right: 5%;
   }
 }
+li > a {
+  color: #929292;
+}
 li > a:hover {
-  text-shadow: 1px 1px 2px black, 0 0 1em #0063dd;
+  color: #0f7cff;
 }
 div > a:hover {
   text-shadow: 1px 1px 2px black, 0 0 1em #0063dd;
 }
 /* АДАПТИВ */
 @media (max-width: 1648px) {
-  .up {
-    bottom: 120px;
-    right: 85px;
-  }
   .trust__picture {
     display: none;
   }
@@ -1139,26 +1106,17 @@ div > a:hover {
   .price__button {
     width: 100px;
   }
-  .price__button_next {
-    width: 100px;
-  }
   .news__body {
     flex-direction: column;
   }
   .news__main {
     margin-left: 15px;
   }
-  .footer__right {
-    width: 200px;
-  }
   .footer__nav {
     flex-direction: column;
   }
 }
 @media (max-width: 580px) {
-  .top__signup {
-    width: 140px;
-  }
   .top__title {
     width: 120px;
   }
@@ -1244,13 +1202,6 @@ div > a:hover {
     flex-direction: column;
     height: 150px;
   }
-  .footer {
-    height: 225px;
-  }
-  .up {
-    bottom: 30px;
-    right: 30px;
-  }
 }
 
 @media (max-width: 420px) {
@@ -1275,8 +1226,10 @@ div > a:hover {
   }
   .top__buttons_down {
     border-radius: 25px 0 0 25px;
+    background: #dfedff;
+    color: black;
   }
-  .top__buttons_free {
+  .top__buttons_radius {
     border-radius: 0 25px 25px 0;
   }
   .downbutton__body {
@@ -1351,21 +1304,15 @@ div > a:hover {
     margin-left: 0px;
     margin: 15px auto 0;
   }
-  .footer {
-    height: 270px;
-  }
   .footer__right {
     font-size: 12px;
   }
   .up {
     width: 60px;
     height: 60px;
-    right: 15px;
   }
 }
-
 /* стили для бургера */
-
 .menu-btn {
   display: flex;
   align-items: center;
